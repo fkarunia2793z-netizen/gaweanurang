@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-dim: #0b1326;
+  --color-tertiary: #68dba9;
+  --color-surface-bright: #31394d;
+  --color-surface-variant: #2d3449;
+  --color-surface-container-highest: #2d3449;
+  --color-status-settled-surface: #064e3b;
+  --color-surface-container-low: #131b2e;
+  --color-status-pending: #f59e0b;
+  --color-text-dim: #94a3b8;
+  --color-primary-fixed: #d8e3fb;
+  --color-secondary-fixed-dim: #b4c5ff;
+  --color-on-primary-container: #8590a6;
+  --color-inverse-surface: #dae2fd;
+  --color-secondary-container: #0053db;
+  --color-text-bright: #f8fafc;
+  --color-on-surface-variant: #c5c6cd;
+  --color-surface-tint: #bcc7de;
+  --color-on-tertiary: #003825;
+  --color-on-secondary-fixed: #00174b;
+  --color-surface-container-lowest: #060e20;
+  --color-status-pending-surface: #78350f;
+  --color-on-primary-fixed: #111c2d;
+  --color-on-secondary-fixed-variant: #003ea8;
+  --color-status-danger: #ef4444;
+  --color-surface: #0b1326;
+  --color-secondary: #b4c5ff;
+  --color-surface-container: #171f33;
+  --color-surface-card: #182234;
+  --color-inverse-on-surface: #283044;
+  --color-on-secondary: #002a78;
+  --color-primary: #bcc7de;
+  --color-outline-variant: #45474c;
+  --color-on-secondary-container: #cdd7ff;
+  --color-tertiary-container: #00301f;
+  --color-tertiary-fixed: #85f8c4;
+  --color-on-error-container: #ffdad6;
+  --color-primary-container: #1e293b;
+  --color-on-error: #690005;
+  --color-status-settled: #10b981;
+  --color-surface-input: #0b1120;
+  --color-border-grid: #334155;
+  --color-on-tertiary-fixed-variant: #005137;
+  --color-tertiary-fixed-dim: #68dba9;
+  --color-secondary-fixed: #dbe1ff;
+  --color-on-primary: #263143;
+  --color-on-tertiary-fixed: #002114;
+  --color-background: #0b1326;
+  --color-on-background: #dae2fd;
+  --color-surface-container-high: #222a3d;
+  --color-error-container: #93000a;
+  --color-status-danger-surface: #7f1d1d;
+  --color-border-accent: #475569;
+  --color-outline: #8f9097;
+  --color-on-tertiary-container: #24a375;
+  --color-on-surface: #dae2fd;
+  --color-inverse-primary: #545f73;
+  --color-on-primary-fixed-variant: #3c475a;
+  --color-primary-fixed-dim: #bcc7de;
+  --color-error: #ffb4ab;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background-color: #0b1326;
+    color: #dae2fd;
+  }
+}
+
+.font-headline-xl {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: var(--font-display);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.font-label-caps {
+  font-family: var(--font-display);
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.font-numeric-kpi {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-numeric-table {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-code-audit {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-body-lg {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-body-md {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-body-sm {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060e20;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

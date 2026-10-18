@@ -1,0 +1,6 @@
+{
+  "name": "AR Tracker Pro — Enterprise Accounts Receivable & GAS Ledger",
+  "description": "Sistem pencatatan piutang perusahaan, verifikasi berkas penagihan, katalog invoice digital, dan audit trail forensik terintegrasi dengan Google Sheets & Google Apps Script.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
