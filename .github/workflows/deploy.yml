@@ -32,6 +32,7 @@ jobs:
       - name: Install dependencies & Build Vite SPA
         run: |
           npm install --legacy-peer-deps
+          npm install react-is --legacy-peer-deps
           npm run build
 
       - name: Upload Pages artifact
